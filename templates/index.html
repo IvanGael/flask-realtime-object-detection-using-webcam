@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Object Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Object Detection Dashboard</h1>
+        <div>
+            <img id="video_feed" src="{{ url_for('video_feed') }}" width="800">
+        </div>
+        <!-- <div class="controls">
+            <h2>Toggle Object Detection</h2>
+            <form method="POST" action="/toggle_detection">
+                {% for cls in yolo.classes %}
+                <div>
+                    <input type="checkbox" id="{{ cls }}" name="{{ cls }}" checked>
+                    <label for="{{ cls }}">{{ cls }}</label>
+                </div>
+                {% endfor %}
+                <button type="submit">Apply</button>
+            </form>
+        </div> -->
+    </div>
+</body>
+</html>
