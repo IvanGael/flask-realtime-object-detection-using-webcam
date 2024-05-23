@@ -28,9 +28,3 @@ class YOLO:
                 frame = cv2.rectangle(frame, (int(xyxy[0]), int(xyxy[1])), (int(xyxy[2]), int(xyxy[3])), (255, 0, 0), 2)
                 frame = cv2.putText(frame, label, (int(xyxy[0]), int(xyxy[1]) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
         return frame
-
-    def toggle_detection(self, cls_name, enable):
-        if cls_name in self.detected_classes:
-            self.detected_classes[cls_name] = enable
-        else:
-            print(f"Class {cls_name} not found in detected_classes")

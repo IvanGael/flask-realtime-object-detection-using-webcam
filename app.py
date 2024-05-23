@@ -29,11 +29,6 @@ def index():
 def video_feed():
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/toggle_detection', methods=['POST'])
-def toggle_detection():
-    for cls in yolo.classes:
-        yolo.toggle_detection(cls, request.form.get(cls) is not None)
-    return render_template('index.html', yolo=yolo)
 
 if __name__ == '__main__':
     app.run(debug=True)
