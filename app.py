@@ -3,10 +3,10 @@
 
 from flask import Flask, render_template, Response, request
 import cv2
-from yolo import YOLO
+from object_detector import ObjectDetector
 
 app = Flask(__name__)
-yolo = YOLO()
+yolo = ObjectDetector()
 
 def gen_frames():
     cap = cv2.VideoCapture(0)  # 0 for webcam, or use an IP camera URL
