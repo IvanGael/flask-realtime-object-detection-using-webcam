@@ -1,7 +1,6 @@
-Real-Time Object Detection :
+## Real-Time Object Detection
 
-A simple flask web app that streams live video from a webcam and performs real-time object detection using YOLOv5 ultralytics. 
-
+A simple flask web app that streams live video from a webcam and performs real-time object detection using YOLOv5 ultralytics.
 
 #### Features
 - Live video feed
