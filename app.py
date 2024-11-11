@@ -1,6 +1,3 @@
-# pip install flask opencv-python-headless torch torchvision numpy ultralytics
-
-
 from flask import Flask, render_template, Response, request
 import cv2
 from object_detector import ObjectDetector

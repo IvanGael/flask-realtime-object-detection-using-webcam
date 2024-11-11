@@ -7,3 +7,13 @@ A simple flask web app that streams live video from a webcam and performs real-t
 - Live video feed
 - Real-time object detection and bounding boxes
 - Confidence score display
+
+### Install 
+````
+pip install -r requirements.txt
+````
+
+### Run
+````
+py app.py
+````
